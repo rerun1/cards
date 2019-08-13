@@ -17,4 +17,10 @@ var hearts = cards.map(function(card){
 
 var deck = clubs.concat(diamonds,spades,hearts);
 
-console.log(deck);
+
+$(document).ready(function(){
+
+  for (var index = 0; index < deck.length; index += 1) {
+    $("ul#deck").append("<li>" + deck[index] + "</li>");
+  };
+});
