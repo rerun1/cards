@@ -7,24 +7,25 @@
 Web page that uses a forEach() loop within another forEach() loop to build an array representing a deck of cards. A deck consists of 52 cards - 13 ranks in each of 4 suits.
 Then, display a list of every card in the deck. (Hint: Each element of the array should read something like "ace of spades" or "4 of hearts").
 
+Instead of following the instructions explicitly this site uses svgs to display the full deck and each individual suit.
 <br>
 
 ## Objectives
-- [] JavaScript business logic and user interface logic are separate.
-- [] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-- [] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
-- [ ] Application implements a for loop and works as expected.
+- [x] JavaScript business logic and user interface logic are separate.
+- [x] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+- [x] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
+- [x] Application implements a for loop and works as expected.
 All previous objectives have been met.
-- [ ] Project is broken down into "plain English" specs, listed in README.
-- [] Project is in a presentable, portfolio-quality state.
-- [] Practice styling with imagery and fonts
+- [x] Project is broken down into "plain English" specs, listed in README.
+- [x] Project is in a presentable, portfolio-quality state.
+- [x] Practice styling with imagery and fonts
 
 <br>
 
 ## Current Screenshot for Reference
 <br>
 
-![alt text](https://raw.githubusercontent.com/rerun1/cards/master/img/screenShot8-12-19.png)
+![alt text](https://raw.githubusercontent.com/rerun1/cards/master/img/screenShot8-13-19.png)
 <br>
 <br>
 

@@ -1,26 +1,61 @@
-var cards = ["Ace", "2", "3", "4", "5","6","7","8","9","10","Jack","Queen","King"];
+var cards = ["ace",2,3,4,5,6,7,8,9,10,"jack","queen","king"];
+var suits = ["Club","Diamond","Spade","Heart"];
+var clubs = [];
+var diamonds = [];
+var spades = [];
+var hearts = [];
 var deck = [];
 
-
-var clubs = cards.map(function(card){
-  return card + " of clubs";
-});
-var diamonds = cards.map(function(card){
-  return card + " of diamonds";
-});
-var spades = cards.map(function(card){
-  return card + " of spades";
-});
-var hearts = cards.map(function(card){
-  return card + " of hearts";
+suits.forEach(function(suit){
+  cards.forEach(function(card) {
+    deck.push(card + suit);
+  });
 });
 
-var deck = clubs.concat(diamonds,spades,hearts);
+cards.forEach(function(card){
+  clubs.push(card+"Club");
+  diamonds.push(card+"Diamond");
+  spades.push(card+"Spade");
+  hearts.push(card+"Heart");
+});
+
+console.log(clubs);
+console.log(diamonds);
+console.log(hearts);
+console.log(spades);
+console.log(deck);
+
 
 
 $(document).ready(function(){
 
-  for (var index = 0; index < deck.length; index += 1) {
-    $("ul#deck").append("<li>" + deck[index] + "</li>");
-  };
+  deck.forEach(function(card){
+
+    $("ul#fullDeck").append("<li><img src='img/" + card + ".svg'></li>");
+
+  });
+
+  clubs.forEach(function(card){
+
+    $("ul#clubs").append("<li><img src='img/" + card + ".svg'></li>");
+
+  });
+  diamonds.forEach(function(card){
+
+    $("ul#diamonds").append("<li><img src='img/" + card + ".svg'></li>");
+
+  });
+  spades.forEach(function(card){
+
+    $("ul#spades").append("<li><img src='img/" + card + ".svg'></li>");
+
+  });
+  hearts.forEach(function(card){
+
+    $("ul#hearts").append("<li><img src='img/" + card + ".svg'></li>");
+
+  });
+
+
+
 });
